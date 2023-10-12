@@ -7,11 +7,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class FlowerPackTest {
-    private FlowerPack flowerPack;
-    private Flower flower;
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_QUANTITY = 100;
     private static final int MAX_PRICE = 1000;
+    private FlowerPack flowerPack;
+    private Flower flower;
 
     @BeforeEach
     public void init() {

@@ -9,6 +9,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class FlowerBucketTest {
+    private static final Random RANDOM_GENERATOR = new Random();
+    private static final int MAX_QUANTITY = 100;
     private FlowerBucket flowerBucket;
     private FlowerPack flowerPack;
     private Flower flower;
@@ -16,8 +18,7 @@ public class FlowerBucketTest {
     @BeforeEach
     public void init() {
         flower = new Flower();
-        flower.setPrice(10);
-        flowerPack = new FlowerPack(flower, 10);
+        flowerPack = new FlowerPack(flower, RANDOM_GENERATOR.nextInt(MAX_QUANTITY));
         flowerBucket = new FlowerBucket();
     }
 
