@@ -18,7 +18,8 @@ public class FlowerBucketTest {
     @BeforeEach
     public void init() {
         flower = new Flower();
-        flowerPack = new FlowerPack(flower, RANDOM_GENERATOR.nextInt(MAX_QUANTITY));
+        int quantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
+        flowerPack = new FlowerPack(flower, quantity);
         flowerBucket = new FlowerBucket();
     }
 

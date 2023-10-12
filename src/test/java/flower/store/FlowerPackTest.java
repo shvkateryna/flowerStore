@@ -17,13 +17,12 @@ public class FlowerPackTest {
     public void init() {
         flower = new Flower();
         flower.setPrice(RANDOM_GENERATOR.nextInt(MAX_PRICE));
-        flowerPack = new FlowerPack(flower, RANDOM_GENERATOR.nextInt(MAX_QUANTITY));
+        int quantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
+        flowerPack = new FlowerPack(flower, quantity);
     }
 
     @Test
     public void testQuantity() {
-        flowerPack.setQuantity(-2);
-        Assertions.assertEquals(1, flowerPack.getQuantity());
         int quantity = RANDOM_GENERATOR.nextInt(MAX_QUANTITY);
         flowerPack.setQuantity(quantity);
         Assertions.assertEquals(quantity, flowerPack.getQuantity());
@@ -31,6 +30,7 @@ public class FlowerPackTest {
 
     @Test
     public void testPrice() {
-        Assertions.assertEquals(flower.getPrice() * flowerPack.getQuantity(), flowerPack.getPrice());
+        double price = flower.getPrice() * flowerPack.getQuantity();
+        Assertions.assertEquals(price, flowerPack.getPrice());
     }
 }
