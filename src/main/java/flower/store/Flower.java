@@ -15,12 +15,13 @@ public class Flower {
     public String getColor() {
         return color.toString();
     }
-    public Flower() {}
 
-    public Flower(Flower Flower) {
-        this.sepalLength = Flower.sepalLength;
-        this.color = Flower.color;
-        this.price = Flower.price;
-        this.flowerType = Flower.flowerType;
+    public Flower(Flower flower) {
+        this.sepalLength = flower.sepalLength;
+        this.color = flower.color;
+        this.price = flower.price;
+        this.flowerType = flower.flowerType;
     }
+
+    public Flower() { }
 }
