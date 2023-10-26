@@ -1,7 +1,5 @@
 package ua.ucu.edu.apps.demo.flowers;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.Random;
 
 import org.junit.jupiter.api.Assertions;
