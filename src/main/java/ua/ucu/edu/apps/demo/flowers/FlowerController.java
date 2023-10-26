@@ -1,4 +1,5 @@
 package ua.ucu.edu.apps.demo.flowers;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,25 +13,25 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/flower")
 public class FlowerController {
 
-	private FlowerService flowerService;
+    private FlowerService flowerService;
 
-	@Autowired
-	public FlowerController(FlowerService flowerService) {
-		this.flowerService = flowerService;
-	}
+    @Autowired
+    public FlowerController(FlowerService flowerService) {
+        this.flowerService = flowerService;
+    }
 
     @GetMapping("/hello")
-	public String getHello() {
-		return "Hello";
-	}
+    public String getHello() {
+        return "Hello";
+    }
 
-	@GetMapping("/list")
-	public List<Flower> getFlowers() {
-		return flowerService.getFlowers();
-	}
+    @GetMapping("/list")
+    public List<Flower> getFlowers() {
+        return flowerService.getFlowers();
+    }
 
-	@PostMapping("/add")
-	public void addFlower(@RequestBody Flower flower) {
-		flowerService.add(flower);
-	}
+    @PostMapping("/add")
+    public void addFlower(@RequestBody Flower flower) {
+        flowerService.add(flower);
+    }
 }
