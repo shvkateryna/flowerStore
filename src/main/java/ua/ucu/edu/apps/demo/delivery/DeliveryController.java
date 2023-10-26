@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/delivery")
 public class DeliveryController {
+	
 	@GetMapping("/")
 	public String getDelivery() {
 		return "Thank you for your order! It will be delivered soon.";
