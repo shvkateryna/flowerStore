@@ -1,19 +1,22 @@
 package ua.ucu.edu.apps.demo.flowers;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
 
-@Setter @Getter @AllArgsConstructor
+@Setter @Getter @AllArgsConstructor @Entity @NoArgsConstructor
 public class Flower {
+    @Id
+    private int id;
     private double sepalLength;
     private FlowerColor color;
     private double price;
     private FlowerType type;
-
-    public Flower() { }
 
     public Flower(Flower flower) {
     }
