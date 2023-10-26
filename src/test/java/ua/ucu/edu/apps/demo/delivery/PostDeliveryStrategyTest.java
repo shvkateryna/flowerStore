@@ -20,6 +20,7 @@ public class PostDeliveryStrategyTest {
     
     @Test
     public void testDeliver() {
-        Assertions.assertEquals("Delivery: Post delivery", postDeliveryStrategy.deliver(items));
+        Assertions.assertEquals("Delivery: Post delivery",
+        postDeliveryStrategy.deliver(items));
     }
 }

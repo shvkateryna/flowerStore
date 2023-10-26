@@ -13,16 +13,12 @@ public class Flower {
     private double price;
     private FlowerType type;
 
-
-    public String getColor() {
-        return color.toString();
-    }
-
+    public Flower() { }
 
     public Flower(Flower flower) {
     }
 
-
-    public Flower() {
+    public String getColor() {
+        return color.toString();
     }
 }

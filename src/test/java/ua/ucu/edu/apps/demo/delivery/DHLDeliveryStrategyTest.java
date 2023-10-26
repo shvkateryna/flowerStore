@@ -20,6 +20,7 @@ public class DHLDeliveryStrategyTest {
     
     @Test
     public void testDeliver() {
-        Assertions.assertEquals("Delivery: DHL delivery", dhlDeliveryStrategy.deliver(items));
+        Assertions.assertEquals("Delivery: DHL delivery", 
+        dhlDeliveryStrategy.deliver(items));
     }
 }

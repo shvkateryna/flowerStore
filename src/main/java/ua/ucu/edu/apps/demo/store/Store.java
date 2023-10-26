@@ -3,11 +3,13 @@ package ua.ucu.edu.apps.demo.store;
 import java.util.ArrayList;
 import java.util.List;
 
+import ua.ucu.edu.apps.demo.store.filter.SearchFilter;
+
 public class Store {
 
     private List<Item> items;
 
-    public List<Item> search(ua.ucu.edu.apps.demo.flowers.filter.SearchFilter filter) {
+    public List<Item> search(SearchFilter filter) {
 
         List<Item> foundItems = new ArrayList<>();
 

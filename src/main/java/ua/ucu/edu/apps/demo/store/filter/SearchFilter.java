@@ -1,4 +1,4 @@
-package ua.ucu.edu.apps.demo.flowers.filter;
+package ua.ucu.edu.apps.demo.store.filter;
 
 
 public interface SearchFilter {

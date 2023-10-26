@@ -21,6 +21,7 @@ public class PayPalPaymentTest {
     
     @Test
     public void testPay() {
-        Assertions.assertEquals("Payment: Pay Pal payment", payPalPayment.pay(price));
+        Assertions.assertEquals("Payment: Pay Pal payment",
+        payPalPayment.pay(price));
     }
 }

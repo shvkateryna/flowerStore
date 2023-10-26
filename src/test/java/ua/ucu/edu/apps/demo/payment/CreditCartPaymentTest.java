@@ -8,12 +8,12 @@ import org.junit.jupiter.api.Test;
 
 public class CreditCartPaymentTest {
     private static final Random RANDOM_GENERATOR = new Random();
-    private creditCartPaymentStrategy creditCartPayment;
+    private CreditCartPaymentStrategy creditCartPayment;
     private double price;
     
     @BeforeEach
     public void init() {
-        creditCartPayment = new creditCartPaymentStrategy();
+        creditCartPayment = new CreditCartPaymentStrategy();
         price = RANDOM_GENERATOR.nextDouble();
         
 
@@ -21,6 +21,7 @@ public class CreditCartPaymentTest {
     
     @Test
     public void testPay() {
-        Assertions.assertEquals("Payment: Credit card payment", creditCartPayment.pay(price));
+        Assertions.assertEquals("Payment: Credit card payment",
+        creditCartPayment.pay(price));
     }
 }
