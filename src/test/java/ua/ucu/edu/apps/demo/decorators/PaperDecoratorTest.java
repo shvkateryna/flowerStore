@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Assertions;
 public class PaperDecoratorTest {
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_PRICE = 100;
-    private final int paperPrice = 13;
+    private final int PAPER_PRICE = 13;
     private PaperDecorator paperDecorator;
     private Flower flower;
 
@@ -26,7 +26,7 @@ public class PaperDecoratorTest {
     public void testPrice() {
         int price = RANDOM_GENERATOR.nextInt(MAX_PRICE);
         flower.setPrice(price);
-        price += paperPrice;
+        price += PAPER_PRICE;
         Assertions.assertEquals(price, paperDecorator.getPrice());
     }
 

@@ -13,8 +13,8 @@ public class RibbonDecorator implements ItemDecorator {
     }
 
     public double getPrice() {
-        final int ribbonPrice = 40;
-        return ribbonPrice + this.item.getPrice();
+        final int RIBBON_PRICE = 40;
+        return RIBBON_PRICE + this.item.getPrice();
     }
     
 }
