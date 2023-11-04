@@ -13,7 +13,8 @@ public class BasketDecorator implements ItemDecorator {
     }
 
     public double getPrice() {
-        return 4 + this.item.getPrice();
+        int basketPrice = 4;
+        return basketPrice + this.item.getPrice();
     }
     
 }

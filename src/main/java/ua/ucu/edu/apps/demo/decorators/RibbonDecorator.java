@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import ua.ucu.edu.apps.demo.store.Item;
 
 @AllArgsConstructor
-public class RibbonDecorator implements ItemDecorator{
+public class RibbonDecorator implements ItemDecorator {
     private Item item;
 
     @Override
@@ -13,7 +13,8 @@ public class RibbonDecorator implements ItemDecorator{
     }
 
     public double getPrice() {
-        return 40 + this.item.getPrice();
+        int ribbonPrice = 40;
+        return ribbonPrice + this.item.getPrice();
     }
     
 }
