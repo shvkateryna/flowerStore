@@ -12,7 +12,7 @@ import org.junit.jupiter.api.Assertions;
 public class BasketDecoratorTest {
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_PRICE = 100;
-    private final int BASKET_PRICE = 4;
+    private final int basketPrice = 4;
     private BasketDecorator basketDecorator;
     private Flower flower;
 
@@ -26,7 +26,7 @@ public class BasketDecoratorTest {
     public void testPrice() {
         int price = RANDOM_GENERATOR.nextInt(MAX_PRICE);
         flower.setPrice(price);
-        price += BASKET_PRICE;
+        price += basketPrice;
         Assertions.assertEquals(price, basketDecorator.getPrice());
     }
 
