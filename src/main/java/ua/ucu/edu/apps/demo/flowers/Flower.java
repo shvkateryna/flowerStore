@@ -1,13 +1,19 @@
 package ua.ucu.edu.apps.demo.flowers;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
+import ua.ucu.edu.apps.demo.store.Item;
 
 
 
-@Setter @Getter @AllArgsConstructor
-public class Flower {
+@Setter @Getter @AllArgsConstructor @Entity
+public class Flower extends Item {
+    @Id
+    private int id;
     private double sepalLength;
     private FlowerColor color;
     private double price;
