@@ -12,8 +12,8 @@ import org.junit.jupiter.api.Assertions;
 public class PaperDecoratorTest {
     private static final Random RANDOM_GENERATOR = new Random();
     private static final int MAX_PRICE = 100;
+    private final int paperPrice = 13;
     private PaperDecorator paperDecorator;
-    private int paperPrice = 13;
     private Flower flower;
 
     @BeforeEach
@@ -26,11 +26,13 @@ public class PaperDecoratorTest {
     public void testPrice() {
         int price = RANDOM_GENERATOR.nextInt(MAX_PRICE);
         flower.setPrice(price);
-        Assertions.assertEquals(price + paperPrice, paperDecorator.getPrice());
+        price += paperPrice;
+        Assertions.assertEquals(price, paperDecorator.getPrice());
     }
 
     @Test
     public void testDescription() {
-        Assertions.assertEquals("Decorated with paper", paperDecorator.getDescription());
+        Assertions.assertEquals("Decorated with paper",
+        paperDecorator.getDescription());
     }
 }

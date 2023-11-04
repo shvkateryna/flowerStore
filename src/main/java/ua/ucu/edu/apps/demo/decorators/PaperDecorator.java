@@ -13,7 +13,7 @@ public class PaperDecorator implements ItemDecorator {
     }
 
     public double getPrice() {
-        int paperPrice = 13;
+        final int paperPrice = 13;
         return paperPrice + this.item.getPrice();
     }
 

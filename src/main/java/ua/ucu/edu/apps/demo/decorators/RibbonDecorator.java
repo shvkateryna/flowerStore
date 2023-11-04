@@ -13,7 +13,7 @@ public class RibbonDecorator implements ItemDecorator {
     }
 
     public double getPrice() {
-        int ribbonPrice = 40;
+        final int ribbonPrice = 40;
         return ribbonPrice + this.item.getPrice();
     }
     
