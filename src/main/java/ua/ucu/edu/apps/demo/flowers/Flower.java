@@ -1,7 +1,8 @@
 package ua.ucu.edu.apps.demo.flowers;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
