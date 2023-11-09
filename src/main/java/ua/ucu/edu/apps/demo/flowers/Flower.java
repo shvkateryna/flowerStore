@@ -30,7 +30,8 @@ public class Flower extends Item {
     }
 
     public String getDescription() {
-        String description = color.toString() + type.toString() + ", price" + price;
+        String description = color.toString() + type.toString()
+         + ", price" + price;
         return description;
     }
 }
