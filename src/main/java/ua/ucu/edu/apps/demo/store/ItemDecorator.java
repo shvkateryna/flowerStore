@@ -1,6 +1,4 @@
-package ua.ucu.edu.apps.demo.decorators;
-
-import ua.ucu.edu.apps.demo.store.Item;
+package ua.ucu.edu.apps.demo.store;
 
 public class ItemDecorator extends Item{
     private Item item;

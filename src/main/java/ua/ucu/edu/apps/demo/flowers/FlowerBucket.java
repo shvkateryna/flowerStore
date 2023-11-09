@@ -21,4 +21,9 @@ public class FlowerBucket extends Item {
     public void addFlowerPack(FlowerPack flowerPack) {
         flowerPacks.add(flowerPack);
     }
+
+    @Override
+    public String getDescription() {
+        return "Bucket";
+    }
 }
